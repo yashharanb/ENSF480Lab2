@@ -1,4 +1,5 @@
 #include <stdio.h>
+using namespace std
 #include "shape.h"
 
 Shape::Shape(Point o, char* name)
