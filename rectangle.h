@@ -24,7 +24,7 @@ class Rectangle: public Square
 		
 		int side_b;
 	
-}
+};
 
 
 #endif
