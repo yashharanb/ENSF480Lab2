@@ -18,7 +18,7 @@ class Square: public Shape
 	private:
 		int side_a;
 	
-}
+};
 
 
 #endif
