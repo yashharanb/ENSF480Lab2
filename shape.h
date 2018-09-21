@@ -41,7 +41,7 @@ class Shape{
 	private:
 		Point origin;
 		char* shapeName;
-}
+};
 
 
 #endif
