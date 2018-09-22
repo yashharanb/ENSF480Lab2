@@ -6,7 +6,10 @@
 #include "point.h"
 using namespace std;
 
-Point::Point(int xval, int yval){
+int Point::idStart = 1001;
+int Point::count = 0;
+
+Point::Point(double xval, double yval){
 	x = xval;
 	y = yval;
 	id = idStart + count;
@@ -21,22 +24,30 @@ int Point::counter(){		// returns the number of objects of class Point at any ti
 	return count;
 }
 	
-double Point::distance(Point& other){
+double Point::distance(Point& other)const{
 	sqrt((x-other.x)*(x-other.x) +(y-other.y)*(y-other.y));
 }
 
 static double Point::distance(Point& first, Point& second){
 	sqrt((first.x-second.x)*(first.x-second.x) +(first.y-second.y)*(first.y-second.y));
 }
+
 double Point::getx() const{
 	return x;
 }
+
 double Point::gety() const{
 	return y;
 }
+
+int Point::getid() const{
+	return id;
+}
+
 void Point::setx(double val){
 	x = val;
 }
+
 void Point::sety(double val){
 	y = val;
 }

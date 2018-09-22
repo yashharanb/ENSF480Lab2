@@ -5,6 +5,7 @@ using namespace std;
 
 void GraphicsWorld::run(){
 	cout<<"Authors: Nicole Caballero and Yashharan Babra"<<endl;
+	
 	#if 1// Change 0 to 1 to test Point
 		Point m (6, 8);
 		Point n (6,8);
@@ -15,11 +16,13 @@ void GraphicsWorld::run(){
 		cout << "\nThe distance between m and n is again: "
 		<< Point::distance(m, n);
 	#endif // end of block to test Point
+	
 	#if 0 // Change 0 to 1 to test Square
 		cout << "\n\nTesting Functions in class Square:" <<endl;
 		Square s(5, 7, 12, "SQUARE - S");
 		s.display();
 	#endif // end of block to test Square
+	
 	#if 0 // Change 0 to 1 to test Rectangle
 		cout << "\nTesting Functions in class Rectangle:";
 		Rectangle a(5, 7, 12, 15, "RECTANGLE A");
@@ -52,6 +55,7 @@ void GraphicsWorld::run(){
 		cout << "\nIf it doesn't there is a problem with your assignment operator.\n" << endl;
 		rec3.display();
 	#endif // end of block to test Rectangle
+	
 	#if 0 // Change 0 to 1 to test using array of pointer and polymorphism
 		cout << "\nTesting array of pointers and polymorphism:" <<endl;
 		Shape* sh[4];
@@ -69,4 +73,5 @@ void GraphicsWorld::run(){
 int main(void){
 	GraphicsWorld test;
 	test.run();
+	return 0;
 }
