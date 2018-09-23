@@ -3,6 +3,7 @@
 // By: Nicole Caballero and Yashharan Babra
 
 #include <iostream>
+#include <cmath>
 #include "point.h"
 using namespace std;
 
@@ -25,11 +26,11 @@ int Point::counter(){		// returns the number of objects of class Point at any ti
 }
 	
 double Point::distance(Point& other)const{
-	sqrt((x-other.x)*(x-other.x) +(y-other.y)*(y-other.y));
+	return sqrt((x-other.x)*(x-other.x) +(y-other.y)*(y-other.y));
 }
 
-static double Point::distance(Point& first, Point& second){
-	sqrt((first.x-second.x)*(first.x-second.x) +(first.y-second.y)*(first.y-second.y));
+double Point::distance(Point& first, Point& second){
+	return sqrt((first.x-second.x)*(first.x-second.x) +(first.y-second.y)*(first.y-second.y));
 }
 
 double Point::getx() const{
