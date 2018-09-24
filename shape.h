@@ -8,7 +8,7 @@ class Shape{
 	
 	public:
 		
-		Shape(Point o, char* name);
+		Shape(int x, int y, char* name);
 		//constructor
 		
 		~Shape();

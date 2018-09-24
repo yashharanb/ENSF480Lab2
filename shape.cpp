@@ -2,8 +2,8 @@
 using namespace std
 #include "shape.h"
 
-Shape::Shape(Point o, char* name)
-: origin(o), shapeName(name){}
+Shape::Shape(int x, int y, char* name)
+: origin(x,y), shapeName(name){}
 
 Shape:: ~Shape(){
 	delete [] shapeName;
