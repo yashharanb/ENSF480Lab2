@@ -34,7 +34,7 @@ Shape& Shape::operator =(const Shape& rhs){
 		exit(1);
 	}
 	
-	strcpy(shapeNAme, rhs.shapeName);
+	strcpy(shapeName, rhs.shapeName);
 	origin = rhs.origin;
 	return *this;
 	

@@ -3,16 +3,18 @@
 
 class Square: public Shape
 {
-	public:
-		double getArea();
+	public
+		Square(int x, int y, int side, char* name);
 		
-		double getPerimeter();
+		double area() const;
 		
-		int getSideA();
+		double perimeter() const;
+		
+		int getSideA() const;
 		
 		int setSideA();
 		
-		void display();
+		void display() const;
 		
 		
 	private:

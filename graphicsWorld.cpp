@@ -1,6 +1,7 @@
 #include <iostream>
 #include "graphicsWorld.h"
 #include "point.h"
+#include "square.h"
 using namespace std;
 
 void GraphicsWorld::run(){
@@ -17,7 +18,7 @@ void GraphicsWorld::run(){
 		<< Point::distance(m, n);
 	#endif // end of block to test Point
 	
-	#if 0 // Change 0 to 1 to test Square
+	#if 1 // Change 0 to 1 to test Square
 		cout << "\n\nTesting Functions in class Square:" <<endl;
 		Square s(5, 7, 12, "SQUARE - S");
 		s.display();
