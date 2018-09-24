@@ -1,14 +1,12 @@
-
-
-
 #ifndef SHAPE_H
 #define SHAPE_H
+#include "point.h"
 
 class Shape{
 	
 	public:
 		
-		Shape(int x, int y, char* name);
+		Shape(int x, int y, const char* name);
 		//constructor
 		
 		~Shape();
@@ -34,13 +32,13 @@ class Shape{
 		
 		double distance(Shape& other);
 		
-		static double dstance(Shape& the_shape, Shape& other);
+		static double distance(Shape& the_shape, Shape& other);
 		
 		void move(double dx, double dy);
 		
-	private:
+	protected:
 		Point origin;
-		char* shapeName;
+		const char* shapeName;
 };
 
 

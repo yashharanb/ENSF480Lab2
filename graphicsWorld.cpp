@@ -1,7 +1,7 @@
 #include <iostream>
 #include "graphicsWorld.h"
-#include "point.h"
 #include "square.h"
+
 using namespace std;
 
 void GraphicsWorld::run(){

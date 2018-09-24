@@ -1,24 +1,23 @@
 #ifndef SQUARE_H
-#include SQUARE_H
-
-class Square: public Shape
-{
-	public
-		Square(int x, int y, int side, char* name);
+#define SQUARE_H
+#include "shape.h"
+class Square: public Shape{
+	public:
+		Square(int x, int y, int side, const char* name);
 		
 		double area() const;
 		
 		double perimeter() const;
 		
-		int getSideA() const;
+		double getSideA() const;
 		
-		int setSideA();
+		void setSideA(double side);
 		
 		void display() const;
 		
 		
 	private:
-		int side_a;
+		double side_a;
 	
 };
 

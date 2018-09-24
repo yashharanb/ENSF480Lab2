@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <iostream>
 using namespace std
 #include "shape.h"
+#include <string>
 
-Shape::Shape(int x, int y, char* name)
+Shape::Shape(int x, int y, const char* name)
 : origin(x,y), shapeName(name){}
 
 Shape:: ~Shape(){
@@ -10,7 +12,7 @@ Shape:: ~Shape(){
 }
 
 Shape::Shape(const Shape& source)
-: origin(source.origin), shapeName(new char[srtlen(source.shapeName)+1])
+: origin(source.origin), shapeName(new char[strlen(source.shapeName)+1])
 {
 	if(shapeName == NULL){
 		cerr << "Memory not available...";
@@ -56,16 +58,14 @@ virtual void Shape::display(){
 }
 
 virtual double Shape::distance(Shape& other){
-	
+	return 0;
 }
 
 static double Shape::distance(Shape& the_shape, Shape& other){
-	
+	return 0;
 }
 
 void Shape::move(double dx, double dy){
-	
-	origin.setx(dx);
-	origin.sety(dy);
-	
+	origin.setx(origin.getx()+dx);
+	origin.sety(origin.gety()+dy);	
 }

@@ -6,12 +6,12 @@ void Rectangle::display(){
 	
 }
 
-double Rectangle::getArea(){
+double Rectangle::area(){
 	
 	
 }
 
-double Rectangle::getPerimeter(){
+double Rectangle::perimeter(){
 	
 	
 }	

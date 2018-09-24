@@ -1,11 +1,13 @@
 #include <iostream>
+#include "square.h"
+using namespace std;
 
-Square::Square(int x, int y, int side, char* name):Shape(x, y, name){
+Square::Square(int x, int y, int side, const char* name):Shape(x, y, name){
 	side_a = side;
 }
 
 void Square::display()const{
-	cout<< "Square Name: " << shapeName << endl;
+	cout<< "Square Name: " << getName() << endl;
 	cout<< "X-coordinate: " << origin.getx() <<endl;
 	cout<< "Y-coordinate: " << origin.gety() <<endl;
 	cout<< "Side a: " << side_a << endl;
@@ -18,19 +20,14 @@ double Square::area()const{
 }
 
 double Square::perimeter()const{
-	
-	
+	return side_a *4;	
 }	
 
-int Square::getSideA()const{
-	
+double Square::getSideA()const{
+	return side_a;
 }
 		
-int Square::setSideA(){
-	
-}
-		
-void Square::display()const{
-	
+void Square::setSideA(double side){
+	side_a = side;
 }
 		

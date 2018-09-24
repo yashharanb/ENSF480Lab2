@@ -1,12 +1,13 @@
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
+#include "square.h"
 
 class Rectangle: public Square
 {
 	public:
-		double getArea();
+		double area();
 		
-		double getPerimeter();
+		double perimeter();
 		
 		int getSideA();
 		
