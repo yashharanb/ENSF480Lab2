@@ -5,25 +5,19 @@
 class Rectangle: public Square
 {
 	public:
-		double area();
+		double area()const;
 		
-		double perimeter();
+		double perimeter()const;
 		
-		int getSideA();
+		double getSideB()const;
 		
-		int setSideA();
+		void setSideB(double side);
 		
-		int getSideB();
-		
-		int setSideB();
-		
-		void display();
+		void display()const;
 		
 		
 	private:
-		int side_a;
-		
-		int side_b;
+		double side_b;
 	
 };
 

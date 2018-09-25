@@ -11,7 +11,7 @@ void GraphicsWorld::run(){
 		Point m (6, 8);
 		Point n (6,8);
 		n.setx(9);
-		cout << "\nExpected to dispaly the distance between m and n is: 3";
+		cout << "\nExpected to display the distance between m and n is: 3";
 		cout << "\nThe distance between m and n is: " << m.distance(n);
 		cout << "\nExpected second version of the distance function also print: 3";
 		cout << "\nThe distance between m and n is again: "

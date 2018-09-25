@@ -1,38 +1,23 @@
 #include <iostream>
 
 
-void Rectangle::display(){
-	
+void Rectangle::display()const{
+		
+}
+
+double Rectangle::area()const{
 	
 }
 
-double Rectangle::area(){
-	
-	
-}
-
-double Rectangle::perimeter(){
-	
+double Rectangle::perimeter()const{
 	
 }	
 
-int Rectangle::getSideA(){
+double Rectangle::getSideB()const{
 	
 }
 		
-int Rectangle::setSideA(){
-	
-}
-
-int Rectangle::getSideB(){
-	
-}
-		
-int Rectangle::setSideB(){
-	
-}
-		
-void Rectangle::display(){
+void Rectangle::setSideB(double side){
 	
 }
 		

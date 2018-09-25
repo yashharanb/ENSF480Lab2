@@ -24,7 +24,7 @@ Shape::Shape(const Shape& source)
 
 Shape& Shape::operator =(const Shape& rhs){
 	
-	if(this == rhs){
+	if(this == &rhs){
 		return *this;
 	}
 	
@@ -42,27 +42,27 @@ Shape& Shape::operator =(const Shape& rhs){
 	
 }
 
-const Point& Shape::getOrigin()const{
-	
+Point& Shape::getOrigin()const{
 	return origin;
 }
 
 
 char* Shape::getName()const{
-	
 	return shapeName;
 }
 
-virtual void Shape::display(){
-	
+void Shape::display()const{
+	cout<< "Shape Name: " << shapeName << endl;
+	cout<< "X-coordinate: " << origin.getx() <<endl;
+	cout<< "Y-coordinate: " << origin.gety() <<endl;
 }
 
-virtual double Shape::distance(Shape& other){
-	return 0;
+double Shape::distance(Shape& other)const{
+	return origin.distance(other.origin);
 }
 
-static double Shape::distance(Shape& the_shape, Shape& other){
-	return 0;
+double Shape::distance(Shape& the_shape, Shape& other){
+	return Point::distance(the_shape.origin, other.origin);
 }
 
 void Shape::move(double dx, double dy){

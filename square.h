@@ -16,7 +16,7 @@ class Square: public Shape{
 		void display() const;
 		
 		
-	private:
+	protected:
 		double side_a;
 	
 };
