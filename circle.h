@@ -1,25 +1,26 @@
 #ifndef CIRCLE_H
 #define CIRCLE_H
+#include "shape.h"
 
-class Circle : public Shape{
+class Circle : virtual public Shape{
 	
 	public:
 	
 		Circle(double x, double y, double r, const char* name);
 		
-		double area();
+		double area()const;
 		
-		double perimeter();
+		double perimeter()const;
 		
 		double getRadius();
 		
-		void setRadius();
+		void setRadius(double r);
 		
 		void display();
 		
 		
 		
-	private:
+	protected:
 	
 		double radius;
 			

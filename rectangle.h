@@ -18,7 +18,7 @@ class Rectangle: public Square
 		void display()const;
 		
 		
-	private:
+	protected:
 		double side_b;
 	
 };

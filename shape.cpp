@@ -54,7 +54,7 @@ char* Shape::getName()const{
 }
 
 void Shape::display()const{
-	cout<< "Shape Name: " << shapeName << endl;
+	cout<< "\nShape Name: " << shapeName << endl;
 	cout<< "X-coordinate: " << origin.getx() <<endl;
 	cout<< "Y-coordinate: " << origin.gety() <<endl;
 }

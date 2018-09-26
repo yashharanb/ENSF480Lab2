@@ -30,6 +30,10 @@ class Shape{
 		//	X-coordinate:
 		//	Y-coordinate:
 		
+		virtual double area()const = 0;
+		
+		virtual double perimeter()const = 0;
+		
 		double distance(Shape& other)const;
 		
 		static double distance(Shape& the_shape, Shape& other);

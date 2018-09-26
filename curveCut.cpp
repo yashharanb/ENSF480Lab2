@@ -1,16 +1,18 @@
+#define _USE_MATH_DEFINES
+
 #include <iostream>
-#include <math.h>
+#include <cmath>
+#include "curveCut.h"
 
-CurveCut::CurveCut(double x, double y, double sideA, double sideB,
-					double r, const char* name)
-:Rectangle(x, y, sideA, sideB, name), Circle(x, y, r, name), Shape(x, y, name){}
+using namespace std;
+
+CurveCut::CurveCut(double x, double y, double sideA, double sideB, double r, const char* name)
+:Shape(x, y, name), Rectangle(x, y, sideA, sideB, name), Circle(x, y, r, name){}
 
 
-double CurveCut::area(){
+double CurveCut::area()const{
 	
-	double degreeRad = 45*PI/180;
-	
-	double circArea = 0.5*(pow(radius, 2))*degreeRad;
+	double circArea = M_PI*pow(radius,2)*0.25;
 	
 	double rectArea = side_b*side_a;
 	
@@ -18,11 +20,9 @@ double CurveCut::area(){
 	
 }
 	
-double CurveCut::perimeter(){
+double CurveCut::perimeter()const{
 	
-	double degreeRad = 45*PI/180;
-	
-	double arclength = radius*degreeRad;
+	double arclength = radius*M_PI*0.5;
 	
 	double rectPer = (2*side_b) + (2*side_a) - (2*radius);
 	

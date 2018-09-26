@@ -1,18 +1,27 @@
-#inlcude <iostream>
-#include <math.h>
+#define _USE_MATH_DEFINES
+
+#include <iostream>
+#include "circle.h"
+#include <cmath>
+
+using namespace std;
  
 
 Circle::Circle(double x, double y, double r, const char* name)
-: Shape(x,y,name), radius(r){      }
-
-double Circle::area(){
+: Shape(x,y,name){
 	
-	return PI*(pow(radius,2));
+	radius = r;
+	
 }
 
-double Circle::perimeter(){
+double Circle::area()const{
 	
-	return 2*PI*radius;
+	return M_PI*(pow(radius,2));
+}
+
+double Circle::perimeter()const{
+	
+	return 2*M_PI*radius;
 }	
 
 double Circle::getRadius(){
