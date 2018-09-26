@@ -9,7 +9,7 @@ double Circle::area(){
 
 double Circle::perimeter(){
 	
-	return 2*PI*r;
+	return 2*PI*radius;
 }	
 
 double Circle::getRadius(){
