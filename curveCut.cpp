@@ -1,8 +1,8 @@
 #include <iostream>
 #include <math.h>
 
-CurveCut::CurveCut(double x, double y, double r,
-					double sideA, double sideB, const char* name)
+CurveCut::CurveCut(double x, double y, double sideA, double sideB,
+					double r, const char* name)
 :Rectangle(x, y, sideA, sideB, name), Circle(x, y, r, name), Shape(x, y, name){}
 
 

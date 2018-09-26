@@ -3,8 +3,8 @@
 
 class CurveCut: public Rectangle, public Circle{
 	
-	CurveCut(double x, double y, double r,
-			 double sideA, double sideB, const char* name);
+	CurveCut(double x, double y, double sideA, double sideB,
+			 double r, const char* name);
 			 
 	double area();
 	
