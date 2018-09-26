@@ -1,6 +1,9 @@
 #inlcude <iostream>
 #include <math.h>
+ 
 
+Circle::Circle(double x, double y, double r, const char* name)
+: Shape(x,y,name), radius(r){      }
 
 double Circle::area(){
 	
@@ -25,6 +28,8 @@ void Circle::setRadius(double r){
 void Circle::display(){
 	
 	cout<< "Circle Name: " << getName() << endl;
+	cout<< "X-coordinate: " << origin.getx() <<endl;
+	cout<< "Y-coordinate: " << origin.gety() <<endl;
 	cout<< "Radius: " << getRadius() <<endl;
 	cout<< "Area: " << area() << endl;
 	cout<< "Perimeter: " << perimeter() <<endl;

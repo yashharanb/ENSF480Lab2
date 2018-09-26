@@ -4,6 +4,8 @@
 class Circle : public Shape{
 	
 	public:
+	
+		Circle(double x, double y, double r, const char* name);
 		
 		double area();
 		
