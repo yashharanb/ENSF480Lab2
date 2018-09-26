@@ -2,7 +2,7 @@
 #include "square.h"
 using namespace std;
 
-Square::Square(int x, int y, int side, const char* name):Shape(x, y, name){
+Square::Square(double x, double y, double side, const char* name):Shape(x, y, name){
 	side_a = side;
 }
 
@@ -27,7 +27,7 @@ double Square::getSideA()const{
 	return side_a;
 }
 		
-void Square::setSideA(double side){
+void Square::set_side_a(double side){
 	side_a = side;
 }
 		

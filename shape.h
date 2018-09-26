@@ -6,7 +6,7 @@ class Shape{
 	
 	public:
 		
-		Shape(int x, int y, const char* name);
+		Shape(double x, double y, const char* name);
 		//constructor
 		
 		~Shape();
@@ -18,7 +18,7 @@ class Shape{
 		Shape& operator =(const Shape& rhs);
 		//assignment operator
 		
-		Point& getOrigin()const;
+		Point& getOrigin();
 		//returns a reference to the point origin
 		
 		char* getName()const;
@@ -39,7 +39,7 @@ class Shape{
 		
 	protected:
 		Point origin;
-		const char* shapeName;
+		char* shapeName;
 };
 
 

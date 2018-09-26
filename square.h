@@ -3,7 +3,7 @@
 #include "shape.h"
 class Square: public Shape{
 	public:
-		Square(int x, int y, int side, const char* name);
+		Square(double x, double y, double side, const char* name);
 		
 		double area() const;
 		
@@ -11,7 +11,7 @@ class Square: public Shape{
 		
 		double getSideA() const;
 		
-		void setSideA(double side);
+		void set_side_a(double side);
 		
 		void display() const;
 		

@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <iostream>
-using namespace std
+using namespace std;
 #include "shape.h"
-#include <string>
+#include <string.h>
 
-Shape::Shape(int x, int y, const char* name)
-: origin(x,y), shapeName(name){}
+Shape::Shape(double x, double y, const char* name): origin(x,y){
+	shapeName = new char[strlen(name)+1];
+	strcpy(shapeName, name);
+}
 
 Shape:: ~Shape(){
 	delete [] shapeName;
@@ -42,7 +44,7 @@ Shape& Shape::operator =(const Shape& rhs){
 	
 }
 
-Point& Shape::getOrigin()const{
+Point& Shape::getOrigin(){
 	return origin;
 }
 
